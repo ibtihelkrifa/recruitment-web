@@ -1,7 +1,8 @@
 package fr.d2factory.libraryapp.member;
 
 
-import fr.d2factory.libraryapp.book.Book;
+
+import fr.d2factory.libraryapp.book.dto.Book;
 
 import java.util.ArrayList;
 import java.util.List;
