@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 
 
-public class BookRepository {
+public  final class BookRepository {
 
 
     private Logger LOGGER = Logger.getLogger("Book Repository");
