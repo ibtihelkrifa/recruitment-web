@@ -210,9 +210,10 @@ public class LibraryTest {
         Book book=library.borrowBook(availableBooks.get(0).getIsbn(),resident,LocalDate.of(2019,5,14));
         assert resident != null;
         resident.setWallet(1500);
+        int nbjours= (int) DAYS.between(LocalDate.of(2019,5,14), LocalDate.now());
         library.returnBook(book,resident);
 
-        assertEquals(1500-(60*10)-(4*20),resident.getWallet(),0);
+        assertEquals(1500-(60*10)-((nbjours-60)*20),resident.getWallet(),0);
 
     }
 
